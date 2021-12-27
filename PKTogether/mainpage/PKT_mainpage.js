@@ -28,7 +28,7 @@ $(".page-wrapper").addClass("toggled");
 });
 
 function loginnmove() {
-location.href = './PKT_login.html';
+location.href = '/PKTogether/loginpage/PKT_login.html';
 }
 
 function mainpagemove() {
