@@ -1,3 +1,3 @@
 function mainmove() {
-	location.href = './PKT_mainpage.html';
+	location.href = '/PKTogether/mainpage/PKT_mainpage.html';
 }
