@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>PKT</title>
+  <!-- 부트스트랩 연결 -->
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap-theme.css.map" rel="stylesheet">
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap.css.map" rel="stylesheet">
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap-3.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./PKT_menutable.css">
+  <link rel='stylesheet' href="./PKT_mainpage.css">
+  <link rel="stylesheet" href="./PKT_notice.css">
+  <!-- 부트스트랩 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/bootstrap-3.3.2-dist/js/"></script>
+  <script src='/bootstrap-3.3.2-dist/js/bootstrap.min.js'></script>
+  <!-- 폰트 어썸 연결 -->
+  <script src="https://kit.fontawesome.com/f47bf3207a.js" crossorigin="anonymous"></script>
+
+  <!-- 제이쿼리 불러오기 (나중)--> 
+</head>
+<body>
+    <div class="page-wrapper chiller-theme toggled">        
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div class="sidebar-content">
+            <div class="sidebar-brand">
+              <a href="./PKT_mainpage.html">PKTogether</a>
+              <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <div class="sidebar-header">
+              <div class="user-pic">
+                <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture">
+              </div>
+              <div class="user-info">
+                <span class="user-name">User
+                  <strong>Name</strong>
+                </span>
+                <span class="user-role">major</span>
+                <span class="user-status">
+                  <button class="btn btn-sm" onclick="loginnmove()">login</button>
+                </span>
+              </div>
+            </div>
+            <!-- sidebar-header  -->
+            <div class="sidebar-search">
+              <div>
+                <div class="input-group">
+                  <input type="text" class="form-control search-menu" placeholder="Search...">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+              <ul>
+                <li class="header-menu">
+                  <span>개인 메뉴</span>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-tachometer-alt"></i>
+                    <span>수강중인 강의</span>
+                    <span class="badge badge-pill badge-warning">New</span>
+                  </a>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>내가 쓴 글</span>
+                    <span class="badge badge-pill badge-danger">3</span>
+                  </a>                  
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="far fa-gem"></i>
+                    <span>아르바이트</span>
+                  </a>              
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="./PKT_timetable.html">
+                    <i class="fa fa-chart-line"></i>
+                    <span>시간표</span>
+                  </a>                  
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-globe"></i>
+                    <span>학점계산기</span>
+                  </a>                  
+                </li>                
+              </ul>
+            </div>
+            <!-- sidebar-menu  -->
+          </div>
+          <!-- sidebar-content  -->
+          <div class="sidebar-footer">
+            <a href="#">
+              <i class="fa fa-bell"></i>
+              <span class="badge badge-pill badge-warning notification">3</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+              <span class="badge badge-pill badge-success notification">7</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-cog"></i>
+              <span class="badge-sonar"></span>
+            </a>
+            <a href="#">
+              <i class="fa fa-power-off"></i>
+            </a>
+          </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+          <div class="container">
+              <!-- 헤더 -->
+              <div class="header pc-visible-on">
+                <img src="./concent.jpg" alt="concent.jpg" class="Mark" onclick="mainpagenmove()" 
+                  style="height: 70px; margin-bottom: 10px;">
+                <div class="top-bar line-height-0">                  
+                  <div class="high_menu-1">
+                      <ul class="high_row">
+                          <a id="show-sidebar" class="btn btn-sm btn-dark high_cell" href="#">
+                            <i class="fas fa-bars fa-3x"></i></a>
+                          <li class="high_cell">
+                              <a href="./PKT_codingsigntable.html">코딩 게시판</a>    
+                          </li>
+                          <li class="high_cell">
+                              <a href="#">강의 게시판</a>
+                          </li>
+                          <li class="high_cell">
+                              <a href="./PKT_timetable.html">스터디 구함</a>
+                          </li>
+                          <li class="high_cell">
+                              <a href="https://pk-select.kro.kr/">PKselect</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="Underline_highbar">
+              <!-- 공지사항 html -->
+              <div id="post-index" class="notice_container" style="display: block;">
+                <ol class="post-list">
+                    <h3 class="sh_noti"><img src="" alt="">학교 공지사항</h3>                    
+                    <li class="post-stub">
+                        <a class="js-ajax-link" href="#">
+                            <h4 class="post-stub-title">Introducing Ghostwriter</h4>
+                            <time class="post-stub-date" datetime="Thu Sep 19 2013 11:58:31 GMT+0000 (UTC)">Published September 19th 2013</time>
+                        </a>
+                    </li>                    
+                    <li class="post-stub">
+                        <a class="js-ajax-link" href="#">
+                            <h4 class="post-stub-title">Some More Nonsense</h4>      
+                            <time class="post-stub-date" datetime="Thu Sep 19 2013 11:57:51 GMT+0000 (UTC)">Published September 19th 2013</time>
+                        </a>
+                    </li>                   
+                    <li class="post-stub">
+                        <a class="js-ajax-link" href="/#">
+                            <h4 class="post-stub-title">Post Titles Are Hard</h4>      
+                            <time class="post-stub-date" datetime="Thu Sep 19 2013 11:55:08 GMT+0000 (UTC)">Published September 19th 2013</time>
+                        </a>
+                    </li>                    
+                    <li class="post-stub">
+                        <a class="js-ajax-link" href="#">
+                            <h4 class="post-stub-title">Markdown Is Great</h4>    
+                            <time class="post-stub-date" datetime="Thu Sep 19 2013 11:54:38 GMT+0000 (UTC)">Published September 19th 2013</time>
+                        </a>
+                    </li>                                      
+                </ol>              
+              </div>
+              <div class="eat_menu">
+                <a href="https://busan.happydorm.or.kr/" 
+                target="_blank" class="item-with-image pasta with-border">
+                <h4> 행복기숙사 </h4> 
+                </a>    
+                <p> Everybody loves pasta. It's impossible to not love them, so here are 15 recipes,
+                    served with GSAP. Note the easter egg — the menu icon changes according 
+                    to the pasta that you choose. </p>
+
+                    
+                    
+              <a href="https://dormitory.pknu.ac.kr/03_notice/notice01.php" target="_blank"
+                class="item-with-image paste with-border">
+              <h4> 세종기숙사 </h4>
+              </a>
+              <p> A tribute of sorts to an era of cool superhero movies, this is a 
+                    Marvel-themed magazine! Recommended, because it took 45 hours, 
+                    so you know some serious dedication has been poured into this.
+              </p> 
+              </div>
+            
+            <!-- 공지사항 끝 -->
+            <!-- 맨 밑 이쁜 골뱅이 -->
+            <!-- <footer class="text-center">
+              <div class="mb-2">
+                <small>
+                  © developer</br>kyj,kmj,ohr
+                  </a>
+                </small>
+              </div>
+            </footer> -->      
+          </div>     
+        </main>
+        <!-- page-content" -->
+      </div>
+        <!-- 나의 js연결 -->
+    <script src="PKT_mainpage.js"></script>
+  <!-- page-wrapper -->
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>PKT</title>
+  <!-- 부트스트랩 연결 -->
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap-theme.css.map" rel="stylesheet">
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap.css.map" rel="stylesheet">
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap-3.3.2-dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href="./PKT_mainpage.css">
+  <link rel='stylesheet' href="./PKT_codingsigntable.css">
+  <!-- 부트스트랩 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/bootstrap-3.3.2-dist/js/"></script>
+  <script src='/bootstrap-3.3.2-dist/js/bootstrap.min.js'></script>
+  <!-- 폰트 어썸 연결 -->
+  <script src="https://kit.fontawesome.com/f47bf3207a.js" crossorigin="anonymous"></script>
+
+  <!-- 제이쿼리 불러오기 (나중)--> 
+</head>
+<body>
+    <div class="page-wrapper chiller-theme toggled">        
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div class="sidebar-content">
+            <div class="sidebar-brand">
+              <a href="#">PKTogether</a>
+              <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <div class="sidebar-header">
+              <div class="user-pic">
+                <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture">
+              </div>
+              <div class="user-info">
+                <span class="user-name">User
+                  <strong>Name</strong>
+                </span>
+                <span class="user-role">major</span>
+                <span class="user-status">
+                  <button class="btn btn-sm" onclick="loginnmove()">login</button>
+                </span>
+              </div>
+            </div>
+            <!-- sidebar-header  -->
+            <div class="sidebar-search">
+              <div>
+                <div class="input-group">
+                  <input type="text" class="form-control search-menu" placeholder="Search...">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+              <ul>
+                <li class="header-menu">
+                  <span>개인 메뉴</span>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-tachometer-alt"></i>
+                    <span>수강중인 강의</span>
+                    <span class="badge badge-pill badge-warning">New</span>
+                  </a>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>내가 쓴 글</span>
+                    <span class="badge badge-pill badge-danger">3</span>
+                  </a>                  
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="far fa-gem"></i>
+                    <span>아르바이트</span>
+                  </a>              
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="./PKT_timetable.html">
+                    <i class="fa fa-chart-line"></i>
+                    <span>시간표</span>
+                  </a>                  
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-globe"></i>
+                    <span>학점계산기</span>
+                  </a>                  
+                </li>                
+              </ul>
+            </div>
+            <!-- sidebar-menu  -->
+          </div>
+          <!-- sidebar-content  -->
+          <div class="sidebar-footer">
+            <a href="#">
+              <i class="fa fa-bell"></i>
+              <span class="badge badge-pill badge-warning notification">3</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+              <span class="badge badge-pill badge-success notification">7</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-cog"></i>
+              <span class="badge-sonar"></span>
+            </a>
+            <a href="#">
+              <i class="fa fa-power-off"></i>
+            </a>
+          </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+          <div class="container">
+              <!-- 헤더 -->
+              <div class="header pc-visible-on">
+                <img src="./concent.jpg" alt="concent.jpg" class="Mark" onclick="mainpagenmove()" 
+                  style="height: 70px; margin-bottom: 10px;">
+                <div class="top-bar line-height-0">
+                  <div class="high_menu-1">
+                      <ul class="high_row">
+                          <a id="show-sidebar" class="btn btn-sm btn-dark high_cell" href="#">
+                            <i class="fas fa-bars fa-3x"></i></a>
+                          <li class="high_cell">
+                              <a href="./PKT_codingsigntable.html">코딩 게시판</a>    
+                          </li>
+                          <li class="high_cell">
+                              <a href="#">강의 게시판</a>
+                          </li>
+                          <li class="high_cell">
+                              <a href="./PKT_timetable.html">스터디 구하기</a>
+                          </li>
+                          <li class="high_cell">
+                              <a href="https://pk-select.kro.kr/">PKselect</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="Underline_highbar">
+              <!-- 공지사항 html -->
+              <div id="container">
+                <div class="main" style="margin: auto;">
+                    <div class="inner-main-admin">
+                        <div class="gh-canvas-header">
+                        <h2>코딩 게시판</h2>
+                        <button type="button" class="btn btn-success">글 쓰기</button>
+                        </div>
+                        <div class="gh-contentfilter">
+                            <div class="gh-contentfilter-left">
+                                <ul>
+                                <li>grade <i class="fas fa-angle-down"></i></li>
+                                <li>Language<i class="fas fa-angle-down"></i></li>
+                                <li>Field<i class="fas fa-angle-down"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="app">
+                            <div id="app-content" class="app_container">
+                                <ul id="post-list">
+                                    <li class="post">
+                                        <div class="user-info"></div>
+                                        <div class="post-info"></div>
+                                    </li>
+                                    <li class="post">
+                                        <div class="user-info"></div>
+                                        <div class="post-info"></div>
+                                    </li>
+                                    <li class="post">
+                                        <div class="user-info"></div>
+                                        <div class="post-info"></div>
+                                    </li>
+                                    <li class="post">
+                                        <div class="user-info"></div>
+                                        <div class="post-info"></div>
+                                    </li>
+                                    <li class="post">
+                                        <div class="user-info"></div>
+                                        <div class="post-info"></div>
+                                    </li>
+                                    <li class="post">
+                                        <div class="user-info"></div>
+                                        <div class="post-info"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-admin">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon-gh"><path d="M28.5 7.313L24.687 3.5a.68.68 0 0 0-.938 0l-.5.563a3.26 3.26 0 0 0-1.813-.563c-.938 0-1.75.313-2.375.938l-7.563 7.563a.68.68 0 0 0 0 .938.71.71 0 0 0 .5.188.677.677 0 0 0 .438-.188l7.563-7.5c.563-.625 1.5-.75 2.25-.438l-6 6.063-13.25 13.188v.063c-.063 0-.063.063-.125.188L.061 31.066a.664.664 0 0 0 .125.75.71.71 0 0 0 .5.188c.063 0 .188 0 .25-.063l6.563-2.813c.125-.063.188-.063.188-.125h.063l13.188-13.25 7.563-7.5c.125-.125.188-.313.188-.5s-.063-.313-.188-.438zM1.938 30.063l1.813-4.188 2.375 2.375zm5.312-2.5L4.437 24.75l12.25-12.25 2.813 2.813zm13.188-13.188l-2.813-2.813 6.125-6.188.5-.438 2.813 2.813z"></path></svg>
+                    <p>New story</p>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon-gh"><path d="M28.688 0H3.313c-.375 0-.625.313-.625.688v30.625c0 .375.25.688.625.688h25.375c.375 0 .625-.313.625-.688V.688c0-.375-.25-.688-.625-.688zM28 30.688H4V1.313h3.313v1.375h-.625v2.625h2.625V2.688h-.625V1.313h4v1.375H12v2.625h2.688V2.688H14V1.313h4v1.375h-.688v2.625H20V2.688h-.688V1.313h4v1.375h-.625v2.625h2.625V2.688h-.625V1.313H28zM23.313 9.313H8.688c-.375 0-.688.313-.688.688s.313.688.688.688h14.625c.375 0 .688-.313.688-.688s-.313-.688-.688-.688zm0 4H8.688c-.375 0-.688.313-.688.688s.313.688.688.688h14.625c.375 0 .688-.313.688-.688s-.313-.688-.688-.688zm0 4H8.688c-.375 0-.688.313-.688.688s.313.688.688.688h14.625c.375 0 .688-.313.688-.688s-.313-.688-.688-.688zm0 4H8.688c-.375 0-.688.313-.688.688s.313.688.688.688h14.625c.375 0 .688-.313.688-.688s-.313-.688-.688-.688zm0 4H8.688c-.375 0-.688.313-.688.688s.313.688.688.688h14.625c.375 0 .688-.313.688-.688s-.313-.688-.688-.688z"></path></svg>
+                    <p>Content</p>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-gh"><g stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M4 6.609V8l-2.539.726C.933 8.877.5 9.45.5 10v.5H6m1-3.922V8l2.538.726c.529.151.962.724.962 1.274v.5H5"></path><ellipse cx="5.5" cy="3.771" rx="3" ry="3.271"></ellipse><path d="M8.469 3.198c-.5.5-1.93.476-2.469-.528-1 1-2.625 1-3.434.429M17 6.609V8l-2.539.726c-.528.151-.961.724-.961 1.274v.5H19m1-3.906V8l2.538.726c.529.151.962.724.962 1.274v.5H18"></path><ellipse cx="18.5" cy="3.771" rx="3" ry="3.271"></ellipse><path d="M21.453 3.195c-.5.5-1.914.479-2.453-.525-1 1-2.625 1-3.434.429M10.5 19.609V21l-2.539.726C7.433 21.877 7 22.45 7 23v.5h5.5m1-3.891V21l2.538.726c.529.151.962.724.962 1.274v.5h-5.5"></path><ellipse cx="12" cy="16.771" rx="3" ry="3.271"></ellipse><path d="M14.953 16.17c-.5.5-1.914.503-2.453-.5-1 1-2.625 1-3.434.429"></path><path stroke-linecap="round" d="M4 12.5L6.5 15M20 12.5L17.5 15"></path></g></svg>
+                    <p>Team</p>
+                  </a>
+                  <a href="#" id="toggle-button-nav">
+                    <svg viewBox="0 0 85 87" xmlns="http://www.w3.org/2000/svg" class="icon-gh"><g fill="currentColor" fill-rule="evenodd"><rect x=".209" y="69.017" width="33.643" height="17.014" rx="4"></rect><rect x="50.672" y="69.017" width="33.622" height="17.014" rx="4"></rect><rect x=".184" y="34.99" width="84.121" height="17.014" rx="4"></rect><rect x=".209" y=".964" width="50.469" height="17.013" rx="4"></rect><rect x="67.494" y=".964" width="16.821" height="17.013" rx="4"></rect></g></svg>
+                    <p>More</p>
+                  </a>
+                </div>
+            </div> 
+          </div>     
+        </main>
+        <!-- page-content" -->
+      </div>
+        <!-- 나의 js연결 -->
+    <script src="PKT_mainpage.js"></script>
+    <script src="PKT_codingsigntable.js"></script>
+  <!-- page-wrapper -->
+  </body>
+</html>

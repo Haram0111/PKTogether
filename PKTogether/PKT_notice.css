@@ -1,0 +1,113 @@
+.notice_container {
+    margin: 0 20px 0 10%;
+    position: relative;
+    max-width: 880px;
+    float: left; width: 60%; padding:10px;
+}
+
+.notice_container{
+    font-family: 'Droid Serif', serif;
+    font-size: 2.0rem;
+    line-height: 1.0em;
+    color: #3A4145;
+}
+.sh_noti{
+    margin: 0 0 0 20px;
+}
+.notice_container ol {
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+    
+.notice_container ul, ol {
+    list-style-position: inside;
+    line-height: 1.8;
+    margin: 0 0 40px;
+    padding: 0;
+}
+    
+    
+.notice_container li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+    
+.notice_container a {
+    color: #F03838;
+    text-decoration: none;
+}
+    
+.notice_container h4 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.notice_container h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 33px;
+    text-transform: none;
+}
+.notice_container user agent stylesheeth4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+    
+    /* ============================================================ */
+    /* Post Index */
+    /* ============================================================ */
+    
+.post-list {
+     /*   border-top: 6px solid #303030; */
+        list-style: none;
+        margin: 20px 20px 0;
+        padding: 0px 0 0;
+}
+    
+.post-stub {
+    border-bottom: 5px double #121622;
+    margin: 0;
+}
+
+    
+.post-stub:first-child { padding-top: 0; }
+    
+.post-stub a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    color: #424242;
+    padding: 10px 5px;
+}
+    
+.post-stub a:hover {
+    background: #F5F5FC;
+    color: #57A3E8;
+    padding: 20px 12px;
+}
+    
+.post-stub-title {
+    display: inline-block;
+    margin: 0;
+    text-transform: none;
+}
+    
+.post-stub-date { display: inline-block; }
+
+.post-stub-date:before { content: "/ "; }
+
+.next-posts-link a,
+.previous-posts-link a {
+    display: block;
+    padding: 8px 11px;
+}
+
+    
