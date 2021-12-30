@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>PKT</title>
   <!-- 부트스트랩 연결 -->
-  <link href="./bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="/PKTogether/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="./bootstrap-3.3.2-dist/css/bootstrap-theme.css.map" rel="stylesheet">
   <link href="./bootstrap-3.3.2-dist/css/bootstrap.css.map" rel="stylesheet">
-  <link href="./bootstrap-3.3.2-dist/css/bootstrap-theme.css" rel="stylesheet">
-  <link rel="stylesheet" href="./bootstrap-3.3.2-dist/css/bootstrap.min.css">
-  <link rel='stylesheet' href="./PKT_mainpage.css">
-  <link rel='stylesheet' href="./PKT_codingsigntable.css">
+  <link href="/PKTogether/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="./bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="/PKTogether/mainpage/PKT_mainpage.css">
+  <link rel="stylesheet" href="/PKTogether/codingsigntable/PKT_codingsigntable.css">
   <!-- 부트스트랩 연결 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="/bootstrap-3.3.2-dist/js/"></script>
@@ -27,7 +27,7 @@
         <nav id="sidebar" class="sidebar-wrapper">
           <div class="sidebar-content">
             <div class="sidebar-brand">
-              <a href="#">PKTogether</a>
+              <a onclick="mainpagemove()">PKTogether</a>
               <div id="close-sidebar">
                 <i class="fas fa-times"></i>
               </div>
@@ -125,7 +125,7 @@
           <div class="container">
               <!-- 헤더 -->
               <div class="header pc-visible-on">
-                <img src="./concent.jpg" alt="concent.jpg" class="Mark" onclick="mainpagenmove()" 
+                <img src="/PKTogether/concent.jpg" alt="concent.jpg" class="Mark" onclick="mainpagenmove()" 
                   style="height: 70px; margin-bottom: 10px;">
                 <div class="top-bar line-height-0">
                   <div class="high_menu-1">
@@ -222,8 +222,8 @@
         <!-- page-content" -->
       </div>
         <!-- 나의 js연결 -->
-    <script src="PKT_mainpage.js"></script>
-    <script src="PKT_codingsigntable.js"></script>
+    <script src="/PKTogether/mainpage/PKT_mainpage.js"></script>
+    <script src="/PKTogether/codingsigntable/PKT_codingsigntable.js"></script>
   <!-- page-wrapper -->
   </body>
 </html>

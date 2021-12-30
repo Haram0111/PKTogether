@@ -32,5 +32,5 @@ location.href = '/PKTogether/loginpage/PKT_login.html';
 }
 
 function mainpagemove() {
-location.href = './PKT_mainpage.html';
+location.href = '/PKTogether/mainpage/PKT_mainpage.html';
 }
