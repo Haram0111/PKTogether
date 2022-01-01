@@ -107,7 +107,7 @@ body {
 .Underline_highbar{
   height: 1.5px;
   background-color: #0f0f0f;
-  margin-top: 0px;
+  margin-top: 1px;
 }
 /* 노말라이즈 */
 .header pc-visible-on > high_row > ul, li, a {
